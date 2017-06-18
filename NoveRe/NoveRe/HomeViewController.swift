@@ -17,23 +17,28 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var controller1 = UIViewController() // 自分で表示したいViewControllerを書く。
-        var controller2 = UIViewController() // 自分で表示したいViewControllerを書く。
-        var controller3 = UIViewController() // 自分で表示したいViewControllerを書く。
+        var controller1 = UIViewController()
+        var controller2 = UIViewController()
+        var controller3 = UIViewController()
+        var controller4 = UIViewController()
+        var controller5 = UIViewController()
         
         controllerArray.append(controller1)
         controllerArray.append(controller2)
         controllerArray.append(controller3)
+        controllerArray.append(controller4)
+        controllerArray.append(controller5)
         
         // Customize menu (Optional)
         let parameters: [CAPSPageMenuOption] = [
             .scrollMenuBackgroundColor(UIColor.white),
             .viewBackgroundColor(UIColor.white),
-            .bottomMenuHairlineColor(UIColor.blue),
-            .selectionIndicatorColor(UIColor.red),
+            .scrollMenuBackgroundColor(UIColor.hex(hexStr: "#555", alpha: 1.0)),
+            .bottomMenuHairlineColor(UIColor.white),
+            .selectionIndicatorColor(UIColor.hex(hexStr: "#555", alpha: 1.0)),
             .menuItemFont(UIFont(name: "HelveticaNeue", size: 14.0)!),
             .centerMenuItems(true),
-            .menuMargin(16),
+            .menuMargin(0),
             .selectedMenuItemLabelColor(UIColor.black),
             .unselectedMenuItemLabelColor(UIColor.gray)
             
@@ -41,7 +46,7 @@ class HomeViewController: UIViewController {
         
         // Initialize scroll menu
         
-        let rect = CGRect(origin: CGPoint(x: 0,y :64), size: CGSize(width: self.view.frame.width, height: self.view.frame.height-64))
+        let rect = CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: self.view.frame.width, height: self.view.frame.height))
         pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: rect, pageMenuOptions: parameters)
         
         self.addChildViewController(pageMenu!)

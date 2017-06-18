@@ -13,7 +13,7 @@
 		C9D62C511EF6BAE9009A6AF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9D62C501EF6BAE9009A6AF4 /* Assets.xcassets */; };
 		C9D62C541EF6BAE9009A6AF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D62C521EF6BAE9009A6AF4 /* LaunchScreen.storyboard */; };
 		C9D62C5C1EF6E6E1009A6AF4 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D62C5B1EF6E6E1009A6AF4 /* CAPSPageMenu.swift */; };
-		C9D62C621EF6ED6C009A6AF4 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D62C611EF6ED6C009A6AF4 /* CustomTabBar.swift */; };
+		C9D62C641EF6EE11009A6AF4 /* CustomUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D62C631EF6EE11009A6AF4 /* CustomUIColor.swift */; };
 		E8F10E191E1000ACA93042DD /* Pods_NoveRe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA05B18A13B90DD2A15FBFC9 /* Pods_NoveRe.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +27,7 @@
 		C9D62C531EF6BAE9009A6AF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9D62C551EF6BAE9009A6AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9D62C5B1EF6E6E1009A6AF4 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
-		C9D62C611EF6ED6C009A6AF4 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		C9D62C631EF6EE11009A6AF4 /* CustomUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIColor.swift; sourceTree = "<group>"; };
 		CA05B18A13B90DD2A15FBFC9 /* Pods_NoveRe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoveRe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97693DDC1913093495409FD /* Pods-NoveRe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoveRe.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoveRe/Pods-NoveRe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,7 +86,7 @@
 				C9D62C4B1EF6BAE9009A6AF4 /* HomeViewController.swift */,
 				C9D62C5B1EF6E6E1009A6AF4 /* CAPSPageMenu.swift */,
 				C9D62C4D1EF6BAE9009A6AF4 /* Main.storyboard */,
-				C9D62C611EF6ED6C009A6AF4 /* CustomTabBar.swift */,
+				C9D62C631EF6EE11009A6AF4 /* CustomUIColor.swift */,
 				C9D62C501EF6BAE9009A6AF4 /* Assets.xcassets */,
 				C9D62C521EF6BAE9009A6AF4 /* LaunchScreen.storyboard */,
 				C9D62C551EF6BAE9009A6AF4 /* Info.plist */,
@@ -218,7 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9D62C621EF6ED6C009A6AF4 /* CustomTabBar.swift in Sources */,
+				C9D62C641EF6EE11009A6AF4 /* CustomUIColor.swift in Sources */,
 				C9D62C4C1EF6BAE9009A6AF4 /* HomeViewController.swift in Sources */,
 				C9D62C4A1EF6BAE9009A6AF4 /* AppDelegate.swift in Sources */,
 				C9D62C5C1EF6E6E1009A6AF4 /* CAPSPageMenu.swift in Sources */,
