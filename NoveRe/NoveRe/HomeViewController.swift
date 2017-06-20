@@ -10,7 +10,7 @@ import UIKit
 
 
 class HomeViewController: UIViewController {
-    
+    var menuTag = 1
     @IBOutlet var buttons:[UIButton] = []
     
     override func viewDidLoad() {
@@ -25,7 +25,7 @@ class HomeViewController: UIViewController {
     }
 
     
-    @IBAction func menuTap(_ sender: UIButton) {
+    @IBAction func toggleMenu(_ sender: UIButton) {
         switch sender.tag {
         case 1:
             print("button_1")
@@ -38,6 +38,19 @@ class HomeViewController: UIViewController {
         case 5:
             print("button_5")
         default:break
+        }
+        
+        if sender.tag != menuTag{
+            menuTag = sender.tag
+            for i in buttons {
+                if i.tag != sender.tag{
+                    i.backgroundColor = UIColor.hex(hexStr: "#FFFFFF", alpha: 1.0)
+                    i.setTitleColor(UIColor.hex(hexStr: "#555555", alpha: 1.0), for: .normal)
+                }else{
+                    i.backgroundColor = UIColor.hex(hexStr: "#555555", alpha: 1.0)
+                    i.setTitleColor(UIColor.hex(hexStr: "#FFFFFF", alpha: 1.0), for: .normal)
+                }
+            }
         }
     }
 

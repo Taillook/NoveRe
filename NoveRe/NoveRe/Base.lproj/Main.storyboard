@@ -29,45 +29,60 @@
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lX2-Re-EkW">
                                                 <rect key="frame" x="0.0" y="0.0" width="75.5" height="44"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="HUH-w6-fQv"/>
                                                 </constraints>
-                                                <state key="normal" title="Likes"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                                <state key="normal" title="Likes">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
                                                 <connections>
-                                                    <action selector="menuTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K3r-YC-amz"/>
+                                                    <action selector="toggleMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6UB-rf-sDv"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7q-kN-8fG">
                                                 <rect key="frame" x="75.5" y="0.0" width="75.5" height="44"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                                <state key="normal" title="Romance">
+                                                    <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
                                                 <connections>
-                                                    <action selector="menuTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5JD-Ga-v0U"/>
+                                                    <action selector="toggleMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1s4-CU-ffY"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ar-ug-0NJ">
                                                 <rect key="frame" x="151" y="0.0" width="74.5" height="44"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                                <state key="normal" title="Fantasy">
+                                                    <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
                                                 <connections>
-                                                    <action selector="menuTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vgi-MM-90g"/>
+                                                    <action selector="toggleMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gFz-hq-k0t"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQl-iW-CQ2">
                                                 <rect key="frame" x="225.5" y="0.0" width="75" height="44"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                                <state key="normal" title="Literature">
+                                                    <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
                                                 <connections>
-                                                    <action selector="menuTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="leo-nI-dhW"/>
+                                                    <action selector="toggleMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KZj-w7-gem"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4i-iZ-xSO">
                                                 <rect key="frame" x="300.5" y="0.0" width="74.5" height="44"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                                <state key="normal" title="Sci-Fi">
+                                                    <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
                                                 <connections>
-                                                    <action selector="menuTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OXG-6I-6sv"/>
+                                                    <action selector="toggleMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YDP-hL-Vcr"/>
                                                 </connections>
                                             </button>
                                         </subviews>
