@@ -1,6 +1,0 @@
-framework module Pods_NoveRe {
-  umbrella header "Pods-NoveRe-umbrella.h"
-
-  export *
-  module * { export * }
-}
