@@ -9,9 +9,10 @@
 import UIKit
 
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDataSource {
     var menuTag = 1
     @IBOutlet var buttons:[UIButton] = []
+    @IBOutlet var buttonBars:[UIView] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,11 +45,11 @@ class HomeViewController: UIViewController {
             menuTag = sender.tag
             for i in buttons {
                 if i.tag != sender.tag{
-                    i.backgroundColor = UIColor.hex(hexStr: "#FFFFFF", alpha: 1.0)
+                    buttonBars[i.tag - 1].backgroundColor = UIColor.hex(hexStr: "#FFFFFF", alpha: 1.0)
                     i.setTitleColor(UIColor.hex(hexStr: "#555555", alpha: 1.0), for: .normal)
                 }else{
-                    i.backgroundColor = UIColor.hex(hexStr: "#555555", alpha: 1.0)
-                    i.setTitleColor(UIColor.hex(hexStr: "#FFFFFF", alpha: 1.0), for: .normal)
+                    buttonBars[i.tag - 1].backgroundColor = UIColor.hex(hexStr: "#333333", alpha: 1.0)
+                    i.setTitleColor(UIColor.hex(hexStr: "#333333", alpha: 1.0), for: .normal)
                 }
             }
         }

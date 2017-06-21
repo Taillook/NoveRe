@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().isTranslucent = false
         UINavigationBar.appearance().barTintColor = UIColor.hex(hexStr: "#EEEEEE", alpha: 1.0)//NavBar背景色
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.black]
+        UINavigationBar.appearance().tintColor = UIColor.hex(hexStr: "555555", alpha: 1.0)
         return true
     }
 
