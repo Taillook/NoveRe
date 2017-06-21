@@ -9,10 +9,11 @@
 import UIKit
 
 
-class HomeViewController: UIViewController, UITableViewDataSource {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var menuTag = 1
     @IBOutlet var buttons:[UIButton] = []
     @IBOutlet var buttonBars:[UIView] = []
+    @IBOutlet weak var novelstableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,26 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         // Dispose of any resources that can be recreated.
     }
 
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! novelstableCell
+        //((tableView.viewWithTag(1) as! UIStackView).viewWithTag(1) as! UILabel).text = String(indexPath.row)
+        cell.title.text = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaTestTest"+String(indexPath.row)
+        
+        return cell
+    }
     
     @IBAction func toggleMenu(_ sender: UIButton) {
         switch sender.tag {
