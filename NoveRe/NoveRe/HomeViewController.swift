@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Alamofire
 
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -14,11 +16,18 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var buttons:[UIButton] = []
     @IBOutlet var buttonBars:[UIView] = []
     @IBOutlet weak var novelstableView: UITableView!
+    var json:JSON = ""
+    var selectedNcode:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print(buttons.count)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        getArticles(biggenre: "")
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,8 +35,33 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Dispose of any resources that can be recreated.
     }
 
+    func getArticles(biggenre: String) {
+        Alamofire.request("http://api.syosetu.com/novelapi/api/", parameters: ["out": "json", "biggenre": biggenre, "order": "hyoka"]).responseJSON{ response in
+            self.json = JSON(response.result.value!)
+            for i in 1..<21{
+                print(self.json[i])
+                print(i)
+            }
+            self.novelstableView.reloadData()
+        }
+    }
+    
+    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "SecondView" {
+            
+            let secondViewController:NobelInfoViewController = segue.destination as! NobelInfoViewController
+            
+            // 変数:遷移先ViewController型 = segue.destinationViewController as 遷移先ViewController型
+            // segue.destinationViewController は遷移先のViewController
+            
+            secondViewController.ncode = selectedNcode
+        }
+        
+    }
+    
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 100 //動いてなくね？
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -38,12 +72,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return 20
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! novelstableCell
-        //((tableView.viewWithTag(1) as! UIStackView).viewWithTag(1) as! UILabel).text = String(indexPath.row)
-        cell.title.text = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaTestTest"+String(indexPath.row)
-        
+        cell.title.text = String(describing: self.json[indexPath.row + 1]["title"])
+        cell.name.text = String(describing: self.json[indexPath.row + 1]["writer"])
+        cell.date.text = String(describing: self.json[indexPath.row + 1]["novelupdated_at"])
+        selectedNcode = String(describing: self.json[indexPath.row + 1]["ncode"])
         return cell
     }
     
@@ -71,6 +105,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 }else{
                     buttonBars[i.tag - 1].backgroundColor = UIColor.hex(hexStr: "#333333", alpha: 1.0)
                     i.setTitleColor(UIColor.hex(hexStr: "#333333", alpha: 1.0), for: .normal)
+                    
+                    getArticles(biggenre: String(i.tag))
                 }
             }
         }

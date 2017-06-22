@@ -49,13 +49,13 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lX2-Re-EkW">
-                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="44"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="75.5" height="44"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="44" id="HUH-w6-fQv"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
-                                                        <state key="normal" title="Likes">
+                                                        <state key="normal" title="All">
                                                             <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
                                                         <connections>
@@ -63,7 +63,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7q-kN-8fG">
-                                                        <rect key="frame" x="75" y="0.0" width="75" height="44"/>
+                                                        <rect key="frame" x="75.5" y="0.0" width="75.5" height="44"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
                                                         <state key="normal" title="Romance">
@@ -74,7 +74,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ar-ug-0NJ">
-                                                        <rect key="frame" x="150" y="0.0" width="74.5" height="44"/>
+                                                        <rect key="frame" x="151" y="0.0" width="74.5" height="44"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
                                                         <state key="normal" title="Fantasy">
@@ -85,7 +85,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQl-iW-CQ2">
-                                                        <rect key="frame" x="224.5" y="0.0" width="75.5" height="44"/>
+                                                        <rect key="frame" x="225.5" y="0.0" width="75" height="44"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
                                                         <state key="normal" title="Literature">
@@ -96,7 +96,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4i-iZ-xSO">
-                                                        <rect key="frame" x="300" y="0.0" width="75" height="44"/>
+                                                        <rect key="frame" x="300.5" y="0.0" width="74.5" height="44"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
                                                         <state key="normal" title="Sci-Fi">
@@ -167,26 +167,26 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <stackView opaque="NO" tag="1" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="cTC-la-6CQ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="39"/>
+                                                            <rect key="frame" x="5" y="0.0" width="365" height="39"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iay-Px-THK">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="42" height="19"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="49.5" height="19"/>
+                                                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tox-VJ-vOh">
-                                                                    <rect key="frame" x="0.0" y="19" width="375" height="20"/>
+                                                                    <rect key="frame" x="0.0" y="19" width="365" height="20"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYS-Q6-0F8">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="187.5" height="20"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="182.5" height="20"/>
+                                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tic-Tv-ydg">
-                                                                            <rect key="frame" x="187.5" y="0.0" width="187.5" height="20"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                            <rect key="frame" x="182.5" y="0.0" width="182.5" height="20"/>
+                                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -212,14 +212,13 @@
                                                         </view>
                                                     </subviews>
                                                     <constraints>
+                                                        <constraint firstItem="ib8-5L-ahG" firstAttribute="centerX" secondItem="cTC-la-6CQ" secondAttribute="centerX" id="7ry-FO-fp2"/>
                                                         <constraint firstItem="cTC-la-6CQ" firstAttribute="top" secondItem="qV2-fU-5Nv" secondAttribute="top" id="Hxv-Nn-YO4"/>
-                                                        <constraint firstItem="ib8-5L-ahG" firstAttribute="leading" secondItem="qV2-fU-5Nv" secondAttribute="leading" id="PKF-e2-iq4"/>
                                                         <constraint firstAttribute="bottom" secondItem="ib8-5L-ahG" secondAttribute="bottom" id="R6b-93-53L"/>
+                                                        <constraint firstItem="cTC-la-6CQ" firstAttribute="leading" secondItem="qV2-fU-5Nv" secondAttribute="leading" constant="5" id="Vzy-yT-RlU"/>
                                                         <constraint firstAttribute="bottom" secondItem="cTC-la-6CQ" secondAttribute="bottom" constant="5" id="fXT-NF-WQk"/>
-                                                        <constraint firstItem="cTC-la-6CQ" firstAttribute="leading" secondItem="qV2-fU-5Nv" secondAttribute="leading" id="feh-QT-dck"/>
-                                                        <constraint firstItem="cTC-la-6CQ" firstAttribute="leading" secondItem="ib8-5L-ahG" secondAttribute="leading" id="gOf-ml-TD4"/>
                                                         <constraint firstItem="cTC-la-6CQ" firstAttribute="top" secondItem="qV2-fU-5Nv" secondAttribute="top" id="iMB-Ag-nBX"/>
-                                                        <constraint firstAttribute="trailing" secondItem="cTC-la-6CQ" secondAttribute="trailing" id="lKN-SW-JqC"/>
+                                                        <constraint firstAttribute="trailing" secondItem="cTC-la-6CQ" secondAttribute="trailing" constant="5" id="p7U-6s-73s"/>
                                                         <constraint firstAttribute="trailing" secondItem="ib8-5L-ahG" secondAttribute="trailing" id="uET-1K-ZPc"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
@@ -229,6 +228,7 @@
                                                     <outlet property="date" destination="tic-Tv-ydg" id="CEJ-Lb-N14"/>
                                                     <outlet property="name" destination="SYS-Q6-0F8" id="3f2-Dh-gzy"/>
                                                     <outlet property="title" destination="Iay-Px-THK" id="y4r-5m-3dz"/>
+                                                    <segue destination="1yM-Nt-mta" kind="show" identifier="HomeViewToNovelInfo" id="ahF-NX-U8F"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -248,14 +248,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vJS-fe-k8p" secondAttribute="bottom" id="deG-wc-BkN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="NoveRe" id="DFL-dU-Ler">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="T7k-Z2-cFy">
-                            <color key="tintColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <segue destination="rjJ-gZ-X3T" kind="show" id="Sx9-IX-t4X"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="NoveRe" id="DFL-dU-Ler"/>
                     <connections>
                         <outlet property="novelstableView" destination="3gM-uK-KTD" id="PGG-Cs-9hx"/>
                         <outletCollection property="buttons" destination="7Ar-ug-0NJ" collectionClass="NSMutableArray" id="fWG-Ak-w43"/>
