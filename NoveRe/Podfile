@@ -6,6 +6,6 @@ target 'NoveRe' do
   use_frameworks!
 
   # Pods for NoveRe
-
-
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
 end
