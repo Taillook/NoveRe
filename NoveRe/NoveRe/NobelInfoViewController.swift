@@ -11,11 +11,15 @@ import UIKit
 class NobelInfoViewController: UIViewController {
 
     var ncode:String = ""
+    @IBOutlet weak var webView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        let favoriteURL = NSURL(string: "http://ncode.syosetu.com/" + ncode)
+        print(ncode)
+        let urlRequest = NSURLRequest(url: favoriteURL! as URL)
+        webView.loadRequest(urlRequest as URLRequest)
     }
 
     override func didReceiveMemoryWarning() {

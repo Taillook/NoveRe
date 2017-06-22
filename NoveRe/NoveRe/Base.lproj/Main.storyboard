@@ -228,7 +228,6 @@
                                                     <outlet property="date" destination="tic-Tv-ydg" id="CEJ-Lb-N14"/>
                                                     <outlet property="name" destination="SYS-Q6-0F8" id="3f2-Dh-gzy"/>
                                                     <outlet property="title" destination="Iay-Px-THK" id="y4r-5m-3dz"/>
-                                                    <segue destination="1yM-Nt-mta" kind="show" identifier="HomeViewToNovelInfo" id="ahF-NX-U8F"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -261,6 +260,7 @@
                         <outletCollection property="buttonBars" destination="U9Q-jX-Osj" collectionClass="NSMutableArray" id="2JI-EK-GBK"/>
                         <outletCollection property="buttonBars" destination="gKT-8x-Kcx" collectionClass="NSMutableArray" id="1km-qc-Kwa"/>
                         <outletCollection property="buttonBars" destination="3cz-3d-Dd6" collectionClass="NSMutableArray" id="dIP-zN-emS"/>
+                        <segue destination="1yM-Nt-mta" kind="show" identifier="HomeViewToNovelInfo" id="s8x-xX-Mk9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -270,7 +270,7 @@
         <!--NoveRe-->
         <scene sceneID="pVQ-2d-9Nd">
             <objects>
-                <viewController id="1yM-Nt-mta" customClass="NobelViewController" customModule="NoveRe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1yM-Nt-mta" customClass="NobelInfoViewController" customModule="NoveRe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bOP-Yf-xwu"/>
                         <viewControllerLayoutGuide type="bottom" id="qGb-EN-FX3"/>
@@ -278,7 +278,19 @@
                     <view key="view" contentMode="scaleToFill" id="Bmu-NZ-L5I">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlj-oq-NSN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xlj-oq-NSN" firstAttribute="leading" secondItem="Bmu-NZ-L5I" secondAttribute="leading" id="TTU-Rq-CSZ"/>
+                            <constraint firstItem="xlj-oq-NSN" firstAttribute="bottom" secondItem="qGb-EN-FX3" secondAttribute="top" id="bbH-k6-gGH"/>
+                            <constraint firstAttribute="trailing" secondItem="xlj-oq-NSN" secondAttribute="trailing" id="dvo-QZ-XvL"/>
+                            <constraint firstItem="xlj-oq-NSN" firstAttribute="top" secondItem="bOP-Yf-xwu" secondAttribute="bottom" id="k2C-oR-rGk"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="NoveRe" id="hui-QR-XdB">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="tmi-5D-UXd">
@@ -286,10 +298,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="webView" destination="xlj-oq-NSN" id="6zh-2O-yRS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3yw-Xo-VEo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="921" y="135"/>
+            <point key="canvasLocation" x="920.79999999999995" y="134.48275862068968"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mk4-HR-MiS">

@@ -16,13 +16,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var buttons:[UIButton] = []
     @IBOutlet var buttonBars:[UIView] = []
     @IBOutlet weak var novelstableView: UITableView!
+    var biggenres:[String] = [" ", "1", "2", "3", "4", "99", "98"]
     var json:JSON = ""
     var selectedNcode:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        print(buttons.count)
+        //print(buttons.count)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -38,23 +39,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func getArticles(biggenre: String) {
         Alamofire.request("http://api.syosetu.com/novelapi/api/", parameters: ["out": "json", "biggenre": biggenre, "order": "hyoka"]).responseJSON{ response in
             self.json = JSON(response.result.value!)
-            for i in 1..<21{
+            /*for i in 1..<21{
                 print(self.json[i])
                 print(i)
-            }
+            }*/
             self.novelstableView.reloadData()
         }
     }
     
-    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        if segue.identifier == "SecondView" {
-            
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "HomeViewToNovelInfo" {
             let secondViewController:NobelInfoViewController = segue.destination as! NobelInfoViewController
-            
-            // 変数:遷移先ViewController型 = segue.destinationViewController as 遷移先ViewController型
-            // segue.destinationViewController は遷移先のViewController
-            
             secondViewController.ncode = selectedNcode
         }
         
@@ -77,8 +72,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.title.text = String(describing: self.json[indexPath.row + 1]["title"])
         cell.name.text = String(describing: self.json[indexPath.row + 1]["writer"])
         cell.date.text = String(describing: self.json[indexPath.row + 1]["novelupdated_at"])
-        selectedNcode = String(describing: self.json[indexPath.row + 1]["ncode"])
         return cell
+    }
+    
+    func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {
+        // [indexPath.row] から画像名を探し、UImage を設定
+        //print(String(describing: self.json[indexPath.row + 1]["ncode"]))
+        selectedNcode = String(describing: self.json[indexPath.row + 1]["ncode"])
+        performSegue(withIdentifier: "HomeViewToNovelInfo",sender: nil)
     }
     
     @IBAction func toggleMenu(_ sender: UIButton) {
@@ -106,7 +107,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                     buttonBars[i.tag - 1].backgroundColor = UIColor.hex(hexStr: "#333333", alpha: 1.0)
                     i.setTitleColor(UIColor.hex(hexStr: "#333333", alpha: 1.0), for: .normal)
                     
-                    getArticles(biggenre: String(i.tag))
+                    getArticles(biggenre: biggenres[i.tag - 1])
                 }
             }
         }
