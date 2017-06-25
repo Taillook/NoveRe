@@ -12,18 +12,30 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let app = EntryPoint()
+        let vc = app.main()
+        let nc = UINavigationController(rootViewController: vc)
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = nc
+        window?.makeKeyAndVisible()
+        
+        setAppearance()
+        
+        return true
+    }
+    
+    func setAppearance(){
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().isTranslucent = false
-        UINavigationBar.appearance().barTintColor = UIColor.hex(hexStr: "#EEEEEE", alpha: 1.0)//NavBar背景色
+        UINavigationBar.appearance().barTintColor = UIColor.hex(hexStr: "#EEEEEE", alpha: 1.0)
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.black]
         UINavigationBar.appearance().tintColor = UIColor.hex(hexStr: "555555", alpha: 1.0)
-        
-        return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

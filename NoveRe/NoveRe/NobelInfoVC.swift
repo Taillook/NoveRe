@@ -8,10 +8,10 @@
 
 import UIKit
 
-class NobelInfoViewController: UIViewController {
+class NobelInfoVC: UIViewController {
 
     var ncode:String = ""
-    @IBOutlet weak var webView: UIWebView!
+    let webView: UIWebView = UIWebView()
     
     override func viewDidLoad() {
         super.viewDidLoad()

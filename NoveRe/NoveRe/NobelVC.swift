@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NobelViewController: UIViewController {
+class NobelVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
