@@ -34,6 +34,7 @@
 		C9F9CD671EFFEC54004B926E /* DeviceSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F9CD661EFFEC54004B926E /* DeviceSize.swift */; };
 		C9F9CD6A1F00099A004B926E /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F9CD681F00099A004B926E /* CustomTableViewCell.swift */; };
 		C9F9CD6B1F00099A004B926E /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9F9CD691F00099A004B926E /* CustomTableViewCell.xib */; };
+		C9F9CD6E1F00F550004B926E /* HomeVMUITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F9CD6D1F00F550004B926E /* HomeVMUITableViewDataSource.swift */; };
 		E8F10E191E1000ACA93042DD /* Pods_NoveRe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA05B18A13B90DD2A15FBFC9 /* Pods_NoveRe.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		C9F9CD661EFFEC54004B926E /* DeviceSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceSize.swift; sourceTree = "<group>"; };
 		C9F9CD681F00099A004B926E /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		C9F9CD691F00099A004B926E /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		C9F9CD6D1F00F550004B926E /* HomeVMUITableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVMUITableViewDataSource.swift; sourceTree = "<group>"; };
 		CA05B18A13B90DD2A15FBFC9 /* Pods_NoveRe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoveRe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97693DDC1913093495409FD /* Pods-NoveRe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoveRe.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoveRe/Pods-NoveRe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				C9F9CD641EFFAA80004B926E /* HomeVM.swift */,
+				C9F9CD6D1F00F550004B926E /* HomeVMUITableViewDataSource.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				C9F9CD671EFFEC54004B926E /* DeviceSize.swift in Sources */,
 				C9F9CD6A1F00099A004B926E /* CustomTableViewCell.swift in Sources */,
 				C9570C421EF97626004CC4E3 /* NobelInfoVC.swift in Sources */,
+				C9F9CD6E1F00F550004B926E /* HomeVMUITableViewDataSource.swift in Sources */,
 				C9F9CD631EFF9652004B926E /* EntryPoint.swift in Sources */,
 				C9D62C4A1EF6BAE9009A6AF4 /* AppDelegate.swift in Sources */,
 			);

@@ -7,9 +7,9 @@
 //
 
 import UIKit
+import RxSwift
 import SwiftyJSON
 import Alamofire
-
 
 class HomeVC: UIViewController {
     private lazy var hometableV: UITableView = {
@@ -30,18 +30,5 @@ class HomeVC: UIViewController {
         self.view.backgroundColor = UIColor.hex(hexStr: "#EEEEEE", alpha: 1.0)
         
         self.view.addSubview(hometableV)
-    }
-}
-
-extension HomeVC: UITableViewDataSource {
-    @available(iOS 2.0, *)
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = UITableViewCell()
-        cell.textLabel?.text = String(indexPath.row)
-        return cell
-    }
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
     }
 }

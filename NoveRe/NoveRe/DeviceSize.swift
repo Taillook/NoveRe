@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 struct DeviceSize {
     static let bounds = UIScreen.main.bounds
     static let screenWidth = UIScreen.main.bounds.size.width

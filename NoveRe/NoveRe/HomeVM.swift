@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol HomeViewModel: class {
     func reloadData()
@@ -15,5 +16,4 @@ protocol HomeViewModel: class {
 class HomeDefaultViewModel: HomeViewModel {
     func reloadData() {
     }
-
 }
