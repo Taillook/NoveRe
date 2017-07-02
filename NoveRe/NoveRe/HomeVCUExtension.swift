@@ -19,4 +19,15 @@ extension HomeVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
     }
+    
+    func tapped(_ sender: UIButton){
+        print(sender.tag)
+        animateImage(target:barView, distance:sender.frame.origin.x - barView.frame.origin.x - barView.bounds.width)
+    }
+
+    func animateImage(target:UIView, distance:CGFloat){
+        UIView.animate(withDuration: 0.5, delay: 0.0, animations: {
+            target.frame.origin.x += target.bounds.width + distance
+        })
+    }
 }
