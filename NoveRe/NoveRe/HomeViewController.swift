@@ -14,8 +14,12 @@ import Alamofire
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var menuTag = 1
     @IBOutlet var buttons:[UIButton] = []
-    @IBOutlet var buttonBars:[UIView] = []
     @IBOutlet weak var novelstableView: UITableView!
+    public lazy var barView: UIView = {
+        let barView = UIView(frame:CGRect(x: 0, y: 44, width: self.buttons[0].bounds.width, height: 4))
+        barView.backgroundColor = UIColor.hex(hexStr: "#333333", alpha: 1.0)
+        return barView
+    }()
     var biggenres:[String] = [" ", "1", "2", "3", "4", "99", "98"]
     var json:JSON = ""
     var selectedNcode:String = ""
@@ -24,6 +28,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //print(buttons.count)
+        view.addSubview(barView)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,10 +44,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func getArticles(biggenre: String) {
         Alamofire.request("http://api.syosetu.com/novelapi/api/", parameters: ["out": "json", "biggenre": biggenre, "order": "hyoka"]).responseJSON{ response in
             self.json = JSON(response.result.value!)
-            /*for i in 1..<21{
-                print(self.json[i])
-                print(i)
-            }*/
             self.novelstableView.reloadData()
         }
     }
@@ -56,7 +57,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100 //動いてなくね？
+        return 100
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -83,35 +84,24 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @IBAction func toggleMenu(_ sender: UIButton) {
-        switch sender.tag {
-        case 1:
-            print("button_1")
-        case 2:
-            print("button_2")
-        case 3:
-            print("button_3")
-        case 4:
-            print("button_4")
-        case 5:
-            print("button_5")
-        default:break
-        }
-        
+        animateImage(target:barView, distance:sender.frame.origin.x - barView.frame.origin.x - barView.bounds.width)
         if sender.tag != menuTag{
             menuTag = sender.tag
             for i in buttons {
                 if i.tag != sender.tag{
-                    buttonBars[i.tag - 1].backgroundColor = UIColor.hex(hexStr: "#FFFFFF", alpha: 1.0)
                     i.setTitleColor(UIColor.hex(hexStr: "#555555", alpha: 1.0), for: .normal)
                 }else{
-                    buttonBars[i.tag - 1].backgroundColor = UIColor.hex(hexStr: "#333333", alpha: 1.0)
                     i.setTitleColor(UIColor.hex(hexStr: "#333333", alpha: 1.0), for: .normal)
-                    
                     getArticles(biggenre: biggenres[i.tag - 1])
                 }
             }
         }
     }
 
+    func animateImage(target:UIView, distance:CGFloat){
+        UIView.animate(withDuration: 0.5, delay: 0.0, animations: {
+            target.frame.origin.x += target.bounds.width + distance
+        })
+    }
 }
 
