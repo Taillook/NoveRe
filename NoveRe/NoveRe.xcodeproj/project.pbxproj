@@ -90,7 +90,6 @@
 		C9D62C481EF6BAE9009A6AF4 /* NoveRe */ = {
 			isa = PBXGroup;
 			children = (
-				C9D62C491EF6BAE9009A6AF4 /* AppDelegate.swift */,
 				C9D62C4B1EF6BAE9009A6AF4 /* HomeViewController.swift */,
 				C9D62C651EF70229009A6AF4 /* NobelViewController.swift */,
 				C9570C411EF97626004CC4E3 /* NobelInfoViewController.swift */,
@@ -99,6 +98,7 @@
 				C9D62C631EF6EE11009A6AF4 /* CustomUIColor.swift */,
 				C9D62C501EF6BAE9009A6AF4 /* Assets.xcassets */,
 				C9D62C521EF6BAE9009A6AF4 /* LaunchScreen.storyboard */,
+				C9D62C491EF6BAE9009A6AF4 /* AppDelegate.swift */,
 				C90B2E831F09536800DBBD31 /* DeviceSize.swift */,
 				C90B2E851F0BDF6300DBBD31 /* Reachability.swift */,
 				C9D62C551EF6BAE9009A6AF4 /* Info.plist */,
