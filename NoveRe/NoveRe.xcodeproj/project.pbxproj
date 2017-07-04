@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C90B2E841F09536800DBBD31 /* DeviceSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B2E831F09536800DBBD31 /* DeviceSize.swift */; };
+		C90B2E861F0BDF6300DBBD31 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B2E851F0BDF6300DBBD31 /* Reachability.swift */; };
 		C9570C421EF97626004CC4E3 /* NobelInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9570C411EF97626004CC4E3 /* NobelInfoViewController.swift */; };
 		C9570C441EFAD318004CC4E3 /* novelstableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9570C431EFAD318004CC4E3 /* novelstableCell.swift */; };
 		C9D62C4A1EF6BAE9009A6AF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D62C491EF6BAE9009A6AF4 /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		59A0F7C1563D75D61672B7E6 /* Pods-NoveRe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoveRe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoveRe/Pods-NoveRe.debug.xcconfig"; sourceTree = "<group>"; };
 		C90B2E831F09536800DBBD31 /* DeviceSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceSize.swift; sourceTree = "<group>"; };
+		C90B2E851F0BDF6300DBBD31 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		C9570C411EF97626004CC4E3 /* NobelInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobelInfoViewController.swift; sourceTree = "<group>"; };
 		C9570C431EFAD318004CC4E3 /* novelstableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = novelstableCell.swift; sourceTree = "<group>"; };
 		C9D62C461EF6BAE9009A6AF4 /* NoveRe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoveRe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +100,7 @@
 				C9D62C501EF6BAE9009A6AF4 /* Assets.xcassets */,
 				C9D62C521EF6BAE9009A6AF4 /* LaunchScreen.storyboard */,
 				C90B2E831F09536800DBBD31 /* DeviceSize.swift */,
+				C90B2E851F0BDF6300DBBD31 /* Reachability.swift */,
 				C9D62C551EF6BAE9009A6AF4 /* Info.plist */,
 			);
 			path = NoveRe;
@@ -233,6 +236,7 @@
 				C9D62C4C1EF6BAE9009A6AF4 /* HomeViewController.swift in Sources */,
 				C9D62C661EF70229009A6AF4 /* NobelViewController.swift in Sources */,
 				C9570C421EF97626004CC4E3 /* NobelInfoViewController.swift in Sources */,
+				C90B2E861F0BDF6300DBBD31 /* Reachability.swift in Sources */,
 				C9D62C4A1EF6BAE9009A6AF4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

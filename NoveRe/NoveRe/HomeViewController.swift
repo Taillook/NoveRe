@@ -33,7 +33,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        getArticles(biggenre: "")
+        if isInternetAvailable() {
+            getArticles(biggenre: "")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -92,7 +94,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                     i.setTitleColor(UIColor.hex(hexStr: "#555555", alpha: 1.0), for: .normal)
                 }else{
                     i.setTitleColor(UIColor.hex(hexStr: "#333333", alpha: 1.0), for: .normal)
-                    getArticles(biggenre: biggenres[i.tag - 1])
+                    if isInternetAvailable() {
+                        getArticles(biggenre: biggenres[i.tag - 1])
+                    }
                 }
             }
         }
