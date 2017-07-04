@@ -73,8 +73,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! novelstableCell
         cell.title.text = String(describing: self.json[indexPath.row + 1]["title"])
-        cell.name.text = String(describing: self.json[indexPath.row + 1]["writer"])
-        cell.date.text = String(describing: self.json[indexPath.row + 1]["novelupdated_at"])
+        cell.name.text = "Writer: " + String(describing: self.json[indexPath.row + 1]["writer"])
+        cell.date.text = "Update: " + dateFormat(date: String(describing: self.json[indexPath.row + 1]["novelupdated_at"]))
         return cell
     }
     
