@@ -12,32 +12,24 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
+
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let app = EntryPoint()
-        let vc = app.main()
-        let nc = UINavigationController(rootViewController: vc)
-        
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = nc
-        window?.makeKeyAndVisible()
-        
-        setAppearance()
-        
+        setUpAppearance()
         return true
     }
-    
-    func setAppearance(){
+
+    func setUpAppearance() {
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().isTranslucent = false
-        UINavigationBar.appearance().barTintColor = UIColor.hex(hexStr: "#EEEEEE", alpha: 1.0)
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.hex(hexStr: "#333333", alpha: 1.0)]
-        UINavigationBar.appearance().tintColor = UIColor.hex(hexStr: "#333333", alpha: 1.0)
+        UINavigationBar.appearance().barTintColor = UIColor.hex(hexStr: "#EEEEEE", alpha: 1.0)//NavBar背景色
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.black]
+        UINavigationBar.appearance().tintColor = UIColor.hex(hexStr: "555555", alpha: 1.0)
     }
-
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
