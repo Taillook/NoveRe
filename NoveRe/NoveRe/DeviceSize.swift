@@ -2,7 +2,7 @@
 //  DeviceSize.swift
 //  NoveRe
 //
-//  Created by Taillook on 2017/06/25.
+//  Created by Taillook on 2017/07/03.
 //  Copyright © 2017年 Taillook. All rights reserved.
 //
 
