@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C90A31ED1F0D1D0300BB50C2 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A31EC1F0D1D0300BB50C2 /* CAPSPageMenu.swift */; };
+		C90A31EF1F0D1D3100BB50C2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A31EE1F0D1D3100BB50C2 /* HomeViewController.swift */; };
 		C90B2E841F09536800DBBD31 /* DeviceSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B2E831F09536800DBBD31 /* DeviceSize.swift */; };
 		C90B2E861F0BDF6300DBBD31 /* IsInternetAvailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B2E851F0BDF6300DBBD31 /* IsInternetAvailable.swift */; };
 		C90B2E881F0C05C900DBBD31 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B2E871F0C05C900DBBD31 /* DateFormat.swift */; };
 		C9570C421EF97626004CC4E3 /* NobelInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9570C411EF97626004CC4E3 /* NobelInfoViewController.swift */; };
 		C9570C441EFAD318004CC4E3 /* novelstableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9570C431EFAD318004CC4E3 /* novelstableCell.swift */; };
 		C9D62C4A1EF6BAE9009A6AF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D62C491EF6BAE9009A6AF4 /* AppDelegate.swift */; };
-		C9D62C4C1EF6BAE9009A6AF4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D62C4B1EF6BAE9009A6AF4 /* HomeViewController.swift */; };
+		C9D62C4C1EF6BAE9009A6AF4 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D62C4B1EF6BAE9009A6AF4 /* RankingViewController.swift */; };
 		C9D62C4F1EF6BAE9009A6AF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D62C4D1EF6BAE9009A6AF4 /* Main.storyboard */; };
 		C9D62C511EF6BAE9009A6AF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9D62C501EF6BAE9009A6AF4 /* Assets.xcassets */; };
 		C9D62C541EF6BAE9009A6AF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D62C521EF6BAE9009A6AF4 /* LaunchScreen.storyboard */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		59A0F7C1563D75D61672B7E6 /* Pods-NoveRe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoveRe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoveRe/Pods-NoveRe.debug.xcconfig"; sourceTree = "<group>"; };
+		C90A31EC1F0D1D0300BB50C2 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
+		C90A31EE1F0D1D3100BB50C2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C90B2E831F09536800DBBD31 /* DeviceSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceSize.swift; sourceTree = "<group>"; };
 		C90B2E851F0BDF6300DBBD31 /* IsInternetAvailable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsInternetAvailable.swift; sourceTree = "<group>"; };
 		C90B2E871F0C05C900DBBD31 /* DateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
@@ -31,7 +35,7 @@
 		C9570C431EFAD318004CC4E3 /* novelstableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = novelstableCell.swift; sourceTree = "<group>"; };
 		C9D62C461EF6BAE9009A6AF4 /* NoveRe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoveRe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D62C491EF6BAE9009A6AF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9D62C4B1EF6BAE9009A6AF4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C9D62C4B1EF6BAE9009A6AF4 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		C9D62C4E1EF6BAE9009A6AF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9D62C501EF6BAE9009A6AF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9D62C531EF6BAE9009A6AF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -92,8 +96,9 @@
 		C9D62C481EF6BAE9009A6AF4 /* NoveRe */ = {
 			isa = PBXGroup;
 			children = (
-				C9D62C4B1EF6BAE9009A6AF4 /* HomeViewController.swift */,
+				C9D62C4B1EF6BAE9009A6AF4 /* RankingViewController.swift */,
 				C9D62C651EF70229009A6AF4 /* NobelViewController.swift */,
+				C90A31EE1F0D1D3100BB50C2 /* HomeViewController.swift */,
 				C9570C411EF97626004CC4E3 /* NobelInfoViewController.swift */,
 				C9570C431EFAD318004CC4E3 /* novelstableCell.swift */,
 				C9D62C4D1EF6BAE9009A6AF4 /* Main.storyboard */,
@@ -101,6 +106,7 @@
 				C9D62C501EF6BAE9009A6AF4 /* Assets.xcassets */,
 				C9D62C521EF6BAE9009A6AF4 /* LaunchScreen.storyboard */,
 				C9D62C491EF6BAE9009A6AF4 /* AppDelegate.swift */,
+				C90A31EC1F0D1D0300BB50C2 /* CAPSPageMenu.swift */,
 				C90B2E831F09536800DBBD31 /* DeviceSize.swift */,
 				C90B2E851F0BDF6300DBBD31 /* IsInternetAvailable.swift */,
 				C90B2E871F0C05C900DBBD31 /* DateFormat.swift */,
@@ -235,10 +241,12 @@
 			files = (
 				C9D62C641EF6EE11009A6AF4 /* CustomUIColor.swift in Sources */,
 				C90B2E841F09536800DBBD31 /* DeviceSize.swift in Sources */,
+				C90A31ED1F0D1D0300BB50C2 /* CAPSPageMenu.swift in Sources */,
 				C9570C441EFAD318004CC4E3 /* novelstableCell.swift in Sources */,
-				C9D62C4C1EF6BAE9009A6AF4 /* HomeViewController.swift in Sources */,
+				C9D62C4C1EF6BAE9009A6AF4 /* RankingViewController.swift in Sources */,
 				C9D62C661EF70229009A6AF4 /* NobelViewController.swift in Sources */,
 				C9570C421EF97626004CC4E3 /* NobelInfoViewController.swift in Sources */,
+				C90A31EF1F0D1D3100BB50C2 /* HomeViewController.swift in Sources */,
 				C90B2E861F0BDF6300DBBD31 /* IsInternetAvailable.swift in Sources */,
 				C9D62C4A1EF6BAE9009A6AF4 /* AppDelegate.swift in Sources */,
 				C90B2E881F0C05C900DBBD31 /* DateFormat.swift in Sources */,
