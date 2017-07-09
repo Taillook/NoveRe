@@ -11,20 +11,24 @@ import UIKit
 class NobelInfoViewController: UIViewController {
 
     var ncode:String = ""
-    @IBOutlet weak var webView: UIWebView!
+    let webView = UIWebView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor.white
+        self.title = "NoveRe"
+        let back = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(NobelInfoViewController.tapped))
+        self.navigationItem.leftBarButtonItem  = back
         let favoriteURL = NSURL(string: "http://ncode.syosetu.com/" + ncode)
         print(ncode)
         let urlRequest = NSURLRequest(url: favoriteURL! as URL)
+        webView.frame = CGRect(x:0,y:0,width:view.bounds.width,height:view.bounds.height)
         webView.loadRequest(urlRequest as URLRequest)
+        
+        view.addSubview(webView)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func tapped() {
+        self.dismiss(animated: true, completion: nil)
     }
-    
 }
