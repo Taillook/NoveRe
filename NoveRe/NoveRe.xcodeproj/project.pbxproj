@@ -13,14 +13,12 @@
 		C90B2E861F0BDF6300DBBD31 /* IsInternetAvailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B2E851F0BDF6300DBBD31 /* IsInternetAvailable.swift */; };
 		C90B2E881F0C05C900DBBD31 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B2E871F0C05C900DBBD31 /* DateFormat.swift */; };
 		C9570C421EF97626004CC4E3 /* NobelInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9570C411EF97626004CC4E3 /* NobelInfoViewController.swift */; };
-		C9570C441EFAD318004CC4E3 /* novelstableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9570C431EFAD318004CC4E3 /* novelstableCell.swift */; };
 		C9D62C4A1EF6BAE9009A6AF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D62C491EF6BAE9009A6AF4 /* AppDelegate.swift */; };
 		C9D62C4C1EF6BAE9009A6AF4 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D62C4B1EF6BAE9009A6AF4 /* RankingViewController.swift */; };
-		C9D62C4F1EF6BAE9009A6AF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D62C4D1EF6BAE9009A6AF4 /* Main.storyboard */; };
 		C9D62C511EF6BAE9009A6AF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9D62C501EF6BAE9009A6AF4 /* Assets.xcassets */; };
-		C9D62C541EF6BAE9009A6AF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D62C521EF6BAE9009A6AF4 /* LaunchScreen.storyboard */; };
 		C9D62C641EF6EE11009A6AF4 /* CustomUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D62C631EF6EE11009A6AF4 /* CustomUIColor.swift */; };
-		C9D62C661EF70229009A6AF4 /* NobelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D62C651EF70229009A6AF4 /* NobelViewController.swift */; };
+		C9DEA9811F1206B6004DE381 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DEA97F1F1206B6004DE381 /* LaunchScreen.xib */; };
+		C9DEA9841F123DFA004DE381 /* NovelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DEA9831F123DFA004DE381 /* NovelCell.swift */; };
 		E8F10E191E1000ACA93042DD /* Pods_NoveRe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA05B18A13B90DD2A15FBFC9 /* Pods_NoveRe.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,16 +30,14 @@
 		C90B2E851F0BDF6300DBBD31 /* IsInternetAvailable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsInternetAvailable.swift; sourceTree = "<group>"; };
 		C90B2E871F0C05C900DBBD31 /* DateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
 		C9570C411EF97626004CC4E3 /* NobelInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobelInfoViewController.swift; sourceTree = "<group>"; };
-		C9570C431EFAD318004CC4E3 /* novelstableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = novelstableCell.swift; sourceTree = "<group>"; };
 		C9D62C461EF6BAE9009A6AF4 /* NoveRe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoveRe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D62C491EF6BAE9009A6AF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9D62C4B1EF6BAE9009A6AF4 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
-		C9D62C4E1EF6BAE9009A6AF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9D62C501EF6BAE9009A6AF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C9D62C531EF6BAE9009A6AF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9D62C551EF6BAE9009A6AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9D62C631EF6EE11009A6AF4 /* CustomUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIColor.swift; sourceTree = "<group>"; };
-		C9D62C651EF70229009A6AF4 /* NobelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobelViewController.swift; sourceTree = "<group>"; };
+		C9DEA97F1F1206B6004DE381 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		C9DEA9831F123DFA004DE381 /* NovelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovelCell.swift; sourceTree = "<group>"; };
 		CA05B18A13B90DD2A15FBFC9 /* Pods_NoveRe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoveRe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97693DDC1913093495409FD /* Pods-NoveRe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoveRe.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoveRe/Pods-NoveRe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,10 +74,10 @@
 		C9D62C3D1EF6BAE8009A6AF4 = {
 			isa = PBXGroup;
 			children = (
-				C9D62C481EF6BAE9009A6AF4 /* NoveRe */,
-				C9D62C471EF6BAE9009A6AF4 /* Products */,
-				AF4B0086978E42202921A735 /* Pods */,
 				41EBAFFD266681B26239EB5A /* Frameworks */,
+				C9D62C481EF6BAE9009A6AF4 /* NoveRe */,
+				AF4B0086978E42202921A735 /* Pods */,
+				C9D62C471EF6BAE9009A6AF4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,23 +92,66 @@
 		C9D62C481EF6BAE9009A6AF4 /* NoveRe */ = {
 			isa = PBXGroup;
 			children = (
-				C9D62C4B1EF6BAE9009A6AF4 /* RankingViewController.swift */,
-				C9D62C651EF70229009A6AF4 /* NobelViewController.swift */,
-				C90A31EE1F0D1D3100BB50C2 /* HomeViewController.swift */,
-				C9570C411EF97626004CC4E3 /* NobelInfoViewController.swift */,
-				C9570C431EFAD318004CC4E3 /* novelstableCell.swift */,
-				C9D62C4D1EF6BAE9009A6AF4 /* Main.storyboard */,
-				C9D62C631EF6EE11009A6AF4 /* CustomUIColor.swift */,
-				C9D62C501EF6BAE9009A6AF4 /* Assets.xcassets */,
-				C9D62C521EF6BAE9009A6AF4 /* LaunchScreen.storyboard */,
-				C9D62C491EF6BAE9009A6AF4 /* AppDelegate.swift */,
-				C90A31EC1F0D1D0300BB50C2 /* CAPSPageMenu.swift */,
-				C90B2E831F09536800DBBD31 /* DeviceSize.swift */,
-				C90B2E851F0BDF6300DBBD31 /* IsInternetAvailable.swift */,
-				C90B2E871F0C05C900DBBD31 /* DateFormat.swift */,
-				C9D62C551EF6BAE9009A6AF4 /* Info.plist */,
+				C9DEA9791F120376004DE381 /* resources */,
+				C9DEA97A1F120395004DE381 /* src */,
 			);
 			path = NoveRe;
+			sourceTree = "<group>";
+		};
+		C9DEA9791F120376004DE381 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				C9D62C501EF6BAE9009A6AF4 /* Assets.xcassets */,
+				C9D62C551EF6BAE9009A6AF4 /* Info.plist */,
+			);
+			name = resources;
+			path = resources;
+			sourceTree = "<group>";
+		};
+		C9DEA97A1F120395004DE381 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C9DEA97D1F1203C9004DE381 /* controller */,
+				C9DEA97C1F1203C3004DE381 /* model */,
+				C9DEA97B1F1203B1004DE381 /* view */,
+				C9D62C491EF6BAE9009A6AF4 /* AppDelegate.swift */,
+			);
+			name = src;
+			path = src;
+			sourceTree = "<group>";
+		};
+		C9DEA97B1F1203B1004DE381 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C9DEA97F1F1206B6004DE381 /* LaunchScreen.xib */,
+				C9DEA9831F123DFA004DE381 /* NovelCell.swift */,
+			);
+			name = view;
+			path = view;
+			sourceTree = "<group>";
+		};
+		C9DEA97C1F1203C3004DE381 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C90A31EC1F0D1D0300BB50C2 /* CAPSPageMenu.swift */,
+				C9D62C631EF6EE11009A6AF4 /* CustomUIColor.swift */,
+				C90B2E871F0C05C900DBBD31 /* DateFormat.swift */,
+				C90B2E831F09536800DBBD31 /* DeviceSize.swift */,
+				C90B2E851F0BDF6300DBBD31 /* IsInternetAvailable.swift */,
+			);
+			name = model;
+			path = model;
+			sourceTree = "<group>";
+		};
+		C9DEA97D1F1203C9004DE381 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				C90A31EE1F0D1D3100BB50C2 /* HomeViewController.swift */,
+				C9570C411EF97626004CC4E3 /* NobelInfoViewController.swift */,
+				C9D62C4B1EF6BAE9009A6AF4 /* RankingViewController.swift */,
+			);
+			name = controller;
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,9 +217,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9D62C541EF6BAE9009A6AF4 /* LaunchScreen.storyboard in Resources */,
+				C9DEA9811F1206B6004DE381 /* LaunchScreen.xib in Resources */,
 				C9D62C511EF6BAE9009A6AF4 /* Assets.xcassets in Resources */,
-				C9D62C4F1EF6BAE9009A6AF4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,10 +279,9 @@
 			files = (
 				C9D62C641EF6EE11009A6AF4 /* CustomUIColor.swift in Sources */,
 				C90B2E841F09536800DBBD31 /* DeviceSize.swift in Sources */,
+				C9DEA9841F123DFA004DE381 /* NovelCell.swift in Sources */,
 				C90A31ED1F0D1D0300BB50C2 /* CAPSPageMenu.swift in Sources */,
-				C9570C441EFAD318004CC4E3 /* novelstableCell.swift in Sources */,
 				C9D62C4C1EF6BAE9009A6AF4 /* RankingViewController.swift in Sources */,
-				C9D62C661EF70229009A6AF4 /* NobelViewController.swift in Sources */,
 				C9570C421EF97626004CC4E3 /* NobelInfoViewController.swift in Sources */,
 				C90A31EF1F0D1D3100BB50C2 /* HomeViewController.swift in Sources */,
 				C90B2E861F0BDF6300DBBD31 /* IsInternetAvailable.swift in Sources */,
@@ -254,25 +291,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C9D62C4D1EF6BAE9009A6AF4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9D62C4E1EF6BAE9009A6AF4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C9D62C521EF6BAE9009A6AF4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9D62C531EF6BAE9009A6AF4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C9D62C561EF6BAE9009A6AF4 /* Debug */ = {
@@ -373,12 +391,15 @@
 			baseConfigurationReference = 59A0F7C1563D75D61672B7E6 /* Pods-NoveRe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = YS65CTH2V7;
-				INFOPLIST_FILE = NoveRe/Info.plist;
+				INFOPLIST_FILE = NoveRe/resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.grapebread.NoveRe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -387,12 +408,15 @@
 			baseConfigurationReference = E97693DDC1913093495409FD /* Pods-NoveRe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = YS65CTH2V7;
-				INFOPLIST_FILE = NoveRe/Info.plist;
+				INFOPLIST_FILE = NoveRe/resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.grapebread.NoveRe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

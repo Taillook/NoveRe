@@ -15,7 +15,6 @@ class NobelInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.white
         self.title = "NoveRe"
         let back = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(NobelInfoViewController.tapped))
@@ -32,10 +31,4 @@ class NobelInfoViewController: UIViewController {
     func tapped() {
         self.dismiss(animated: true, completion: nil)
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 }

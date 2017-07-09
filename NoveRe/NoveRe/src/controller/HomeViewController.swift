@@ -14,18 +14,15 @@ class HomeViewController: UIViewController, CAPSPageMenuDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Viewを格納する配列
         var controllerArray : [UIViewController] = []
+        self.title = "NoveRe"
         
-        // 追加するViewを作成
         for i in biggenres {
             let controller = RankingViewController()
             controller.title = i["title"]
             controller.biggenre = i["param"]!
             controllerArray.append(controller)
         }
-        
-        // PageMenuの設定
         let parameters: [CAPSPageMenuOption] = [
             .menuItemSeparatorWidth(5),
             .useMenuLikeSegmentedControl(false),
@@ -33,16 +30,7 @@ class HomeViewController: UIViewController, CAPSPageMenuDelegate {
             .menuHeight(44),
             .selectionIndicatorHeight(4)
         ]
-        
-        // PageMenuへのビューの追加と、PageMenuのビューサイズを設定
         pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRect(x:0.0,y:0.0,width:self.view.frame.width,height:self.view.frame.height), pageMenuOptions: parameters)
-        
-        // PageMenuのビューを親のビューに追加
         self.view.addSubview(pageMenu!.view)
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }

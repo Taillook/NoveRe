@@ -32,7 +32,7 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         novelstableView.rowHeight = 70
         novelstableView.delegate      =   self
         novelstableView.dataSource    =   self
-        novelstableView.register(MyCell.self, forCellReuseIdentifier: NSStringFromClass(MyCell.self))
+        novelstableView.register(NovelCell.self, forCellReuseIdentifier: NSStringFromClass(NovelCell.self))
         self.view.addSubview(novelstableView)
     }
     
@@ -49,7 +49,7 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(MyCell.self), for: indexPath) as! MyCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(NovelCell.self), for: indexPath) as! NovelCell
         cell.title.text = String(describing: self.json[indexPath.row + 1]["title"])
         cell.writer.text = "Writer: " + String(describing: self.json[indexPath.row + 1]["writer"])
         cell.date.text = "Update: " + dateFormat(date: String(describing: self.json[indexPath.row + 1]["novelupdated_at"]))
@@ -72,50 +72,4 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return ""
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-    }
 }
-
-class MyCell: UITableViewCell {
-    var title: UILabel!
-    var writer: UILabel!
-    var date: UILabel!
-    
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
-        title = UILabel(frame: CGRect.zero)
-        title.textAlignment = .left
-        title.adjustsFontSizeToFitWidth = true
-        title.numberOfLines = 1
-        title.lineBreakMode = NSLineBreakMode.byCharWrapping
-        writer = UILabel(frame: CGRect.zero)
-        writer.textAlignment = .left
-        writer.adjustsFontSizeToFitWidth = true
-        writer.numberOfLines = 1
-        date = UILabel(frame: CGRect.zero)
-        date.textAlignment = .right
-        contentView.addSubview(title)
-        contentView.addSubview(writer)
-        contentView.addSubview(date)
-    }
-    
-    required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder: ) has not been implemented")
-    }
-    
-    override func prepareForReuse() {
-        super.prepareForReuse()
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        title.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height / 2)
-        writer.frame = CGRect(x: 0, y: frame.height / 2, width: frame.width / 2, height: frame.height / 2)
-        date.frame = CGRect(x: frame.width / 2, y: frame.height / 2, width: frame.width / 2, height: frame.height / 2)
-    }
-}
-
