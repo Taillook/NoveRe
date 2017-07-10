@@ -12,13 +12,21 @@ import Alamofire
 
 
 class RankingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var json:JSON = ""
+    var json:JSON = "" {
+        didSet {
+            NoDataView.removeFromSuperview()
+            view.addSubview(novelstableView)
+        }
+    }
     var selectedNcode:String = ""
     var biggenre = ""
     var novelstableView = UITableView()
+    let NoDataView:UIView = UINib(nibName: "NoData", bundle: nil).instantiate(withOwner: self, options: nil)[0] as! UIView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NoDataView.frame = view.frame
+        self.view.addSubview(NoDataView)
         setUpTableView()
         if isInternetAvailable() {
             getArticles(biggenre: biggenre)
@@ -30,10 +38,10 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         novelstableView.estimatedRowHeight = 90
         novelstableView.rowHeight = UITableViewAutomaticDimension
         novelstableView.rowHeight = 70
+        novelstableView.backgroundColor = UIColor.hex(hexStr: "#EEEEEE", alpha: 1.0)
         novelstableView.delegate      =   self
         novelstableView.dataSource    =   self
         novelstableView.register(NovelCell.self, forCellReuseIdentifier: NSStringFromClass(NovelCell.self))
-        self.view.addSubview(novelstableView)
     }
     
     func getArticles(biggenre: String) {
@@ -46,7 +54,6 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(NovelCell.self), for: indexPath) as! NovelCell

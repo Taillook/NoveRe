@@ -17,8 +17,9 @@
 		C9D62C4C1EF6BAE9009A6AF4 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D62C4B1EF6BAE9009A6AF4 /* RankingViewController.swift */; };
 		C9D62C511EF6BAE9009A6AF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9D62C501EF6BAE9009A6AF4 /* Assets.xcassets */; };
 		C9D62C641EF6EE11009A6AF4 /* CustomUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D62C631EF6EE11009A6AF4 /* CustomUIColor.swift */; };
-		C9DEA9811F1206B6004DE381 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DEA97F1F1206B6004DE381 /* LaunchScreen.xib */; };
 		C9DEA9841F123DFA004DE381 /* NovelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DEA9831F123DFA004DE381 /* NovelCell.swift */; };
+		C9DEA98B1F136F8B004DE381 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DEA98A1F136F8B004DE381 /* LaunchScreen.xib */; };
+		C9DEA98D1F136FA5004DE381 /* NoData.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DEA98C1F136FA5004DE381 /* NoData.xib */; };
 		E8F10E191E1000ACA93042DD /* Pods_NoveRe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA05B18A13B90DD2A15FBFC9 /* Pods_NoveRe.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,8 +37,9 @@
 		C9D62C501EF6BAE9009A6AF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9D62C551EF6BAE9009A6AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9D62C631EF6EE11009A6AF4 /* CustomUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIColor.swift; sourceTree = "<group>"; };
-		C9DEA97F1F1206B6004DE381 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		C9DEA9831F123DFA004DE381 /* NovelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovelCell.swift; sourceTree = "<group>"; };
+		C9DEA98A1F136F8B004DE381 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		C9DEA98C1F136FA5004DE381 /* NoData.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoData.xib; sourceTree = "<group>"; };
 		CA05B18A13B90DD2A15FBFC9 /* Pods_NoveRe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoveRe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97693DDC1913093495409FD /* Pods-NoveRe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoveRe.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoveRe/Pods-NoveRe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,7 +106,6 @@
 				C9D62C501EF6BAE9009A6AF4 /* Assets.xcassets */,
 				C9D62C551EF6BAE9009A6AF4 /* Info.plist */,
 			);
-			name = resources;
 			path = resources;
 			sourceTree = "<group>";
 		};
@@ -116,17 +117,16 @@
 				C9DEA97B1F1203B1004DE381 /* view */,
 				C9D62C491EF6BAE9009A6AF4 /* AppDelegate.swift */,
 			);
-			name = src;
 			path = src;
 			sourceTree = "<group>";
 		};
 		C9DEA97B1F1203B1004DE381 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				C9DEA97F1F1206B6004DE381 /* LaunchScreen.xib */,
+				C9DEA98A1F136F8B004DE381 /* LaunchScreen.xib */,
+				C9DEA98C1F136FA5004DE381 /* NoData.xib */,
 				C9DEA9831F123DFA004DE381 /* NovelCell.swift */,
 			);
-			name = view;
 			path = view;
 			sourceTree = "<group>";
 		};
@@ -139,7 +139,6 @@
 				C90B2E831F09536800DBBD31 /* DeviceSize.swift */,
 				C90B2E851F0BDF6300DBBD31 /* IsInternetAvailable.swift */,
 			);
-			name = model;
 			path = model;
 			sourceTree = "<group>";
 		};
@@ -150,7 +149,6 @@
 				C9570C411EF97626004CC4E3 /* NobelInfoViewController.swift */,
 				C9D62C4B1EF6BAE9009A6AF4 /* RankingViewController.swift */,
 			);
-			name = controller;
 			path = controller;
 			sourceTree = "<group>";
 		};
@@ -217,8 +215,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9DEA9811F1206B6004DE381 /* LaunchScreen.xib in Resources */,
+				C9DEA98B1F136F8B004DE381 /* LaunchScreen.xib in Resources */,
 				C9D62C511EF6BAE9009A6AF4 /* Assets.xcassets in Resources */,
+				C9DEA98D1F136FA5004DE381 /* NoData.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
