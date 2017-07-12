@@ -16,6 +16,8 @@ class HomeViewController: UIViewController, CAPSPageMenuDelegate {
         super.viewDidLoad()
         var controllerArray : [UIViewController] = []
         self.title = "NoveRe"
+        let search = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.search, target: self, action: #selector(HomeViewController.searchTapped))
+        self.navigationItem.rightBarButtonItem  = search
         
         for i in biggenres {
             let controller = RankingViewController()
@@ -34,5 +36,9 @@ class HomeViewController: UIViewController, CAPSPageMenuDelegate {
         ]
         pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRect(x:0.0,y:0.0,width:self.view.frame.width,height:self.view.frame.height), pageMenuOptions: parameters)
         self.view.addSubview(pageMenu!.view)
+    }
+    
+    func searchTapped() {
+    
     }
 }
