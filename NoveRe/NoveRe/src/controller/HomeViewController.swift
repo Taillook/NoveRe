@@ -39,6 +39,8 @@ class HomeViewController: UIViewController, CAPSPageMenuDelegate {
     }
     
     func searchTapped() {
-    
+        let modalView = UINavigationController(rootViewController: SearchViewController())
+        modalView.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+        self.view.window?.rootViewController!.present(modalView, animated: true, completion: nil)
     }
 }
