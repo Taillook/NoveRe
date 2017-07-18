@@ -12,10 +12,13 @@ class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.white
+        self.title = "Search"
+        let back = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem(rawValue: 101)!, target: self, action: #selector(tapped))
+        self.navigationItem.leftBarButtonItem = back
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func tapped() {
+        self.dismiss(animated: true, completion: nil)
     }
 }
