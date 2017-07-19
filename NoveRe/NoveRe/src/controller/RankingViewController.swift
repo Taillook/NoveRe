@@ -18,7 +18,6 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
             view.addSubview(novelstableView)
         }
     }
-    var selectedNcode:String = ""
     var biggenre = ""
     var novelstableView = UITableView()
     let NoDataView:UIView = UINib(nibName: "NoData", bundle: nil).instantiate(withOwner: self, options: nil)[0] as! UIView
@@ -64,9 +63,9 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {
-        selectedNcode = String(describing: self.json[indexPath.row + 1]["ncode"])
         let novelView = NobelInfoViewController()
-        novelView.ncode = selectedNcode
+        novelView.ncode = String(describing: self.json[indexPath.row + 1]["ncode"])
+        novelView.novelTitle = String(describing: self.json[indexPath.row + 1]["title"])
         let modalView = UINavigationController(rootViewController: novelView)
         modalView.modalTransitionStyle = UIModalTransitionStyle.coverVertical
         self.view.window?.rootViewController!.present(modalView, animated: true, completion: nil)

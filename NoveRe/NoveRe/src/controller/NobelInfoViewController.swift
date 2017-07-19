@@ -9,13 +9,14 @@
 import UIKit
 
 class NobelInfoViewController: UIViewController {
-    var ncode:String = ""
+    var ncode: String = ""
+    var novelTitle: String = ""
     let webView = UIWebView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
-        self.title = "NoveRe"
+        self.title = novelTitle
         let back = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem(rawValue: 101)!, target: self, action: #selector(tapped))
         self.navigationItem.leftBarButtonItem = back
         let favoriteURL = NSURL(string: "http://ncode.syosetu.com/" + ncode)
