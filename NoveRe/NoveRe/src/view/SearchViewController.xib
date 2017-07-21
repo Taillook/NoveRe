@@ -19,13 +19,25 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bOM-HQ-h9h">
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="bOM-HQ-h9h">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Stj-O8-zja">
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Stj-O8-zja" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="J5O-BK-i2W"/>
+                <constraint firstItem="Stj-O8-zja" firstAttribute="top" secondItem="bOM-HQ-h9h" secondAttribute="bottom" id="Yon-3h-qw0"/>
+                <constraint firstItem="bOM-HQ-h9h" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dy9-YT-WBj"/>
+                <constraint firstItem="bOM-HQ-h9h" firstAttribute="trailing" secondItem="Stj-O8-zja" secondAttribute="trailing" id="kjj-5E-i8M"/>
+                <constraint firstItem="bOM-HQ-h9h" firstAttribute="leading" secondItem="Stj-O8-zja" secondAttribute="leading" id="ltj-Q8-io7"/>
+                <constraint firstAttribute="bottom" secondItem="Stj-O8-zja" secondAttribute="bottom" id="ttE-jU-rI6"/>
+                <constraint firstAttribute="trailing" secondItem="Stj-O8-zja" secondAttribute="trailing" id="yIz-7J-PyG"/>
+            </constraints>
         </view>
     </objects>
 </document>
