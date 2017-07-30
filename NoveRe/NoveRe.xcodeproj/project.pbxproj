@@ -22,6 +22,7 @@
 		C9DEA9841F123DFA004DE381 /* NovelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DEA9831F123DFA004DE381 /* NovelCell.swift */; };
 		C9DEA98B1F136F8B004DE381 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DEA98A1F136F8B004DE381 /* LaunchScreen.xib */; };
 		C9DEA98D1F136FA5004DE381 /* NoData.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DEA98C1F136FA5004DE381 /* NoData.xib */; };
+		C9FF62901F2E2907002389B5 /* RankingVCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FF628F1F2E2907002389B5 /* RankingVCM.swift */; };
 		E8F10E191E1000ACA93042DD /* Pods_NoveRe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA05B18A13B90DD2A15FBFC9 /* Pods_NoveRe.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +34,7 @@
 		C90B2E851F0BDF6300DBBD31 /* IsInternetAvailable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsInternetAvailable.swift; sourceTree = "<group>"; };
 		C90B2E871F0C05C900DBBD31 /* DateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
 		C929F0E61F1D034600D70717 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		C929F0E71F1D034600D70717 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchViewController.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		C929F0E71F1D034600D70717 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		C9570C411EF97626004CC4E3 /* NobelInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NobelInfoViewController.swift; sourceTree = "<group>"; };
 		C9D62C461EF6BAE9009A6AF4 /* NoveRe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoveRe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D62C491EF6BAE9009A6AF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		C9DEA9831F123DFA004DE381 /* NovelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovelCell.swift; sourceTree = "<group>"; };
 		C9DEA98A1F136F8B004DE381 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		C9DEA98C1F136FA5004DE381 /* NoData.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoData.xib; sourceTree = "<group>"; };
+		C9FF628F1F2E2907002389B5 /* RankingVCM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingVCM.swift; sourceTree = "<group>"; };
 		CA05B18A13B90DD2A15FBFC9 /* Pods_NoveRe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoveRe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97693DDC1913093495409FD /* Pods-NoveRe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoveRe.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoveRe/Pods-NoveRe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +120,7 @@
 			children = (
 				C9DEA97D1F1203C9004DE381 /* controller */,
 				C9DEA97C1F1203C3004DE381 /* model */,
+				C9FF628E1F2E28D9002389B5 /* vcm */,
 				C9DEA97B1F1203B1004DE381 /* view */,
 				C9D62C491EF6BAE9009A6AF4 /* AppDelegate.swift */,
 			);
@@ -156,6 +159,15 @@
 				C929F0E61F1D034600D70717 /* SearchViewController.swift */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		C9FF628E1F2E28D9002389B5 /* vcm */ = {
+			isa = PBXGroup;
+			children = (
+				C9FF628F1F2E2907002389B5 /* RankingVCM.swift */,
+			);
+			name = vcm;
+			path = vcm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +298,7 @@
 				C9D62C641EF6EE11009A6AF4 /* CustomUIColor.swift in Sources */,
 				C929F0E81F1D034600D70717 /* SearchViewController.swift in Sources */,
 				C90B2E841F09536800DBBD31 /* DeviceSize.swift in Sources */,
+				C9FF62901F2E2907002389B5 /* RankingVCM.swift in Sources */,
 				C9DEA9841F123DFA004DE381 /* NovelCell.swift in Sources */,
 				C90A31ED1F0D1D0300BB50C2 /* CAPSPageMenu.swift in Sources */,
 				C9D62C4C1EF6BAE9009A6AF4 /* RankingViewController.swift in Sources */,
