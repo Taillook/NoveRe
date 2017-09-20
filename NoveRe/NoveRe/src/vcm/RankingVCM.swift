@@ -17,8 +17,8 @@ extension RankingViewController: UITableViewDelegate, UITableViewDataSource {
         novelstableView.rowHeight = UITableViewAutomaticDimension
         novelstableView.rowHeight = 70
         novelstableView.backgroundColor = UIColor.hex(hexStr: "#EEEEEE", alpha: 1.0)
-        novelstableView.delegate      =   self
-        novelstableView.dataSource    =   self
+        novelstableView.delegate = self
+        novelstableView.dataSource = self
         novelstableView.register(NovelCell.self, forCellReuseIdentifier: NSStringFromClass(NovelCell.self))
     }
     
